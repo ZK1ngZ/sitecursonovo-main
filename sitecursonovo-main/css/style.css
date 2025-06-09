@@ -88,37 +88,13 @@ button:hover {
   background-color: #2575fc;
 }
 
-.card button {
-  margin: 5px 5px 10px 0;
-}
 
-.card {
-  background: white;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.card:hover {
-  transform: translateY(-5px);
-}
 
-.card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
 
-.card .price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #6a11cb;
-  margin-bottom: 10px;
-}
+
+
+
 
 .grid {
   display: grid;
@@ -325,14 +301,6 @@ footer {
   font-size: 1.2rem;
 }
 
-.courses .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.courses .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
 
 
 .video {
@@ -474,4 +442,97 @@ footer {
   .video-container {
     padding-bottom: 56.25%;
   }
+}
+/* Estilos Gerais para a Seção de Cursos */
+#cursos-ofertados {
+    padding: 60px 0; /* Espaçamento interno superior e inferior */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    text-align: center; /* Centraliza o texto principal */
+}
+
+#cursos-ofertados h2 {
+    font-size: 2.5em; /* Tamanho do título da seção */
+    color: #333; /* Cor do título */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 20px; /* Espaçamento lateral interno */
+}
+
+/* Estilos para o Grid de Cursos */
+.cursos-grid {
+    display: grid; /* Usa CSS Grid para organizar os cartões */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 30px; /* Espaçamento entre os cartões */
+    justify-content: center; /* Centraliza os itens no grid */
+}
+
+/* Estilos para cada Cartão de Curso */
+.curso-card {
+    background-color: #fff; /* Fundo branco para o cartão */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Garante que a imagem não saia dos cantos arredondados */
+    text-align: left; /* Alinha o texto à esquerda dentro do cartão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Garante que todos os cards tenham a mesma altura */
+}
+
+.curso-card:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Sombra mais intensa ao passar o mouse */
+}
+
+.curso-imagem {
+    width: 100%; /* A imagem ocupa toda a largura do div */
+    height: 200px; /* Altura fixa para a imagem */
+    overflow: hidden; /* Esconde qualquer parte da imagem que exceda */
+}
+
+.curso-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+.curso-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 20px 10px; /* Espaçamento interno para o título do curso */
+}
+
+.curso-card p {
+    font-size: 1em;
+    color: #666;
+    margin: 0 20px 20px; /* Espaçamento interno para a descrição */
+    flex-grow: 1; /* Permite que a descrição ocupe o espaço restante */
+}
+
+.btn-saiba-mais {
+    display: inline-block; /* Faz o botão se comportar como um bloco */
+    background-color: #007bff; /* Cor de fundo do botão (azul) */
+    color: #fff; /* Cor do texto do botão */
+    padding: 12px 25px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Texto em negrito */
+    margin: 0 20px 20px; /* Espaçamento inferior e lateral */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.btn-saiba-mais:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .cursos-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
 }
