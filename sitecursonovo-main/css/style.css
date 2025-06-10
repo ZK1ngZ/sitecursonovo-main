@@ -88,13 +88,37 @@ button:hover {
   background-color: #2575fc;
 }
 
+.card button {
+  margin: 5px 5px 10px 0;
+}
 
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.card:hover {
+  transform: translateY(-5px);
+}
 
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
 
-
-
-
+.card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
 
 .grid {
   display: grid;
@@ -301,6 +325,14 @@ footer {
   font-size: 1.2rem;
 }
 
+.courses .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courses .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 
 .video {
