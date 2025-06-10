@@ -8,24 +8,73 @@
   <link rel="stylesheet" href="/sitecursonovo-main/css/style.css" />
 </head>
 <body>
-  <header class="hero">
+<header class="hero">
     <div class="hero-bg"></div>
-    <div class="hero-content">
-      <h1>Matemática para Concursos Públicos</h1>
-      <p>Prepare-se com o professor Eduardo Tavares e conquiste sua vaga!</p>
-    
+  
+    <div class="hero-container">
+        <div class="professor-silhouette">
+            <img src="/sitecursonovo-main/img/silhueta.png" alt="Silhueta do Professor Eduardo Tavares" class="silhouette-img">
+        </div>
+        <div class="hero-content">
+            <h1>Matemática para Concursos Públicos</h1>
+            <p class="subtitle">Domine a matemática e garanta sua aprovação</p>
+            <div class="cta-container">
+                <p class="teacher">Com o professor Eduardo Tavares</p>
+                <button class="cta-button">Comece agora</button>
+            </div>
+        </div>
     </div>
-  </header>
+</header>
   
 
-  <section class="video">
-    <h2>Assista à Mensagem do Professor Eduardo Tavares</h2>
-    <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" 
-        title="Vídeo do Professor Eduardo Tavares" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+  <section class="banner-carousel">
+    <h2>Destaques e Promoções</h2>
+    <div class="banner-container">
+      <button class="banner-btn prev"><i class="fas fa-chevron-left"></i></button>
+      <div class="banner-track">
+        <!-- Banner 1 -->
+        <div class="banner-slide active">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Curso de Matemática Básica">
+          <div class="banner-caption">
+            <h3>Matemática para Iniciantes</h3>
+            <p>Domine os fundamentos e comece sua jornada nos concursos</p>
+          </div>
+        </div>
+        
+        <!-- Banner 2 -->
+        <div class="banner-slide">
+          <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Promoção Especial">
+          <div class="banner-caption">
+            <h3>Promoção por Tempo Limitado</h3>
+            <p>40% de desconto em todos os cursos esta semana</p>
+          </div>
+        </div>
+        
+        <!-- Banner 3 -->
+        <div class="banner-slide">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Material Exclusivo">
+          <div class="banner-caption">
+            <h3>Material Exclusivo</h3>
+            <p>Baixe nosso e-book gratuito com as 50 questões mais cobradas</p>
+          </div>
+        </div>
+        
+        <!-- Banner 4 -->
+        <div class="banner-slide">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Depoimentos">
+          <div class="banner-caption">
+            <h3>Alunos Aprovados</h3>
+            <p>Veja histórias de sucesso de quem já conquistou a vaga</p>
+          </div>
+        </div>
+      </div>
+      <button class="banner-btn next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="banner-dots">
+      <div class="banner-dot active"></div>
+      <div class="banner-dot"></div>
+      <div class="banner-dot"></div>
+      <div class="banner-dot"></div>
     </div>
   </section>
 
@@ -34,111 +83,542 @@
     <div class="container">
         <h2>Nossos Cursos</h2>
         <div class="cursos-grid">
-            <div class="curso-card">
-                <div class="curso-imagem">
-                    <img src="/sitecursonovo-main/img/Market place  Matemática (600 x 600 px).png" alt="Nome do Curso 1">
-                    </div>
-                <h3>Nome do Curso 1</h3>
-                <p>Uma breve descrição do que o aluno aprenderá neste curso. Destaque os principais benefícios e tópicos abordados.</p>
-                <a href="#" class="btn-saiba-mais">Saiba Mais</a>
-            </div>
+  <!-- Curso 1 - Matemática Básica -->
+  <div class="curso-card">
+    <div class="curso-badge">LANÇAMENTO</div>
+    <div class="curso-imagem">
+      <img src="/sitecursonovo-main/img/bannercursomatematica.png" alt="Matemática Básica para Concursos">
+      <div class="curso-overlay">
+        <a href="#" class="btn-preview">Ver Prévia</a>
+      </div>
+    </div>
+    <div class="curso-content">
+      <div class="curso-category">Matemática Fundamental</div>
+      <h3>Matemática Básica para Concursos</h3>
+      <p class="curso-description">Domine as quatro operações, frações, porcentagens e regra de três com método comprovado.</p>
+      
+      <div class="curso-meta">
+        <div class="meta-item">
+          <i class="fas fa-video"></i>
+          <span>30 aulas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-clock"></i>
+          <span>20 horas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-star"></i>
+          <span>4.8 (215)</span>
+        </div>
+      </div>
+      
+      <div class="curso-price">
+        <span class="original-price">R$ 247,00</span>
+        <span class="current-price">R$ 167,00</span>
+        <span class="discount-badge">32% OFF</span>
+      </div>
+      
+      <div class="curso-cta">
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        <a href="#" class="btn-comprar">Comprar Agora</a>
+      </div>
+    </div>
+  </div>
 
-            <div class="curso-card">
-                <div class="curso-imagem">
-                    <img src="/sitecursonovo-main/img/Cópia de Cópia de Modelo de questão com resposta (600 x 600 px).png" alt="Nome do Curso 2">
-                </div>
-                <h3>Nome do Curso 2</h3>
-                <p>Aqui você pode descrever o conteúdo do segundo curso. Seja claro e conciso para atrair o interesse do seu público.</p>
-                <a href="#" class="btn-saiba-mais">Saiba Mais</a>
-            </div>
+  <!-- Curso 2 - Raciocínio Lógico -->
+  <div class="curso-card">
+    <div class="curso-badge">MAIS VENDIDO</div>
+    <div class="curso-imagem">
+      <img src="/sitecursonovo-main/img/raciocinio-logico.png" alt="Raciocínio Lógico para Concursos">
+      <div class="curso-overlay">
+        <a href="#" class="btn-preview">Ver Prévia</a>
+      </div>
+    </div>
+    <div class="curso-content">
+      <div class="curso-category">Raciocínio Lógico</div>
+      <h3>Raciocínio Lógico para Concursos</h3>
+      <p class="curso-description">Aprenda a resolver questões de lógica formal e informal com técnicas infalíveis.</p>
+      
+      <div class="curso-meta">
+        <div class="meta-item">
+          <i class="fas fa-video"></i>
+          <span>25 aulas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-clock"></i>
+          <span>18 horas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-star"></i>
+          <span>4.9 (342)</span>
+        </div>
+      </div>
+      
+      <div class="curso-price">
+        <span class="original-price">R$ 297,00</span>
+        <span class="current-price">R$ 197,00</span>
+        <span class="discount-badge">34% OFF</span>
+      </div>
+      
+      <div class="curso-cta">
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        <a href="#" class="btn-comprar">Comprar Agora</a>
+      </div>
+    </div>
+  </div>
 
-            <div class="curso-card">
-                <div class="curso-imagem">
-                    <img src="https://via.placeholder.com/300x200" alt="Nome do Curso 3">
-                </div>
-                <h3>Nome do Curso 3</h3>
-                <p>Apresente o terceiro curso com seus diferenciais. Lembre-se de usar imagens de alta qualidade para cada curso.</p>
-                <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+  <!-- Curso 3 - Matemática Financeira -->
+  <div class="curso-card">
+    <div class="curso-badge">OFERTA</div>
+    <div class="curso-imagem">
+      <img src="/sitecursonovo-main/img/bannercursofinanceira.jpg" alt="Matemática Financeira para Concursos">
+      <div class="curso-overlay">
+        <a href="#" class="btn-preview">Ver Prévia</a>
+      </div>
+    </div>
+    <div class="curso-content">
+      <div class="curso-category">Matemática Avançada</div>
+      <h3>Matemática Financeira para Concursos</h3>
+      <p class="curso-description">Juros simples e compostos, descontos, amortização e análise de investimentos.</p>
+      
+      <div class="curso-meta">
+        <div class="meta-item">
+          <i class="fas fa-video"></i>
+          <span>18 aulas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-clock"></i>
+          <span>12 horas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-star"></i>
+          <span>4.7 (178)</span>
+        </div>
+      </div>
+      
+      <div class="curso-price">
+        <span class="original-price">R$ 227,00</span>
+        <span class="current-price">R$ 147,00</span>
+        <span class="discount-badge">35% OFF</span>
+      </div>
+      
+      <div class="curso-cta">
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        <a href="#" class="btn-comprar">Comprar Agora</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Curso 4 - Estatística Básica -->
+  <div class="curso-card">
+    <div class="curso-imagem">
+      <img src="/sitecursonovo-main/img/estatistica.png" alt="Estatística Básica para Concursos">
+      <div class="curso-overlay">
+        <a href="#" class="btn-preview">Ver Prévia</a>
+      </div>
+    </div>
+    <div class="curso-content">
+      <div class="curso-category">Estatística</div>
+      <h3>Estatística Básica para Concursos</h3>
+      <p class="curso-description">Média, moda, mediana, desvio padrão e probabilidade para provas de concursos.</p>
+      
+      <div class="curso-meta">
+        <div class="meta-item">
+          <i class="fas fa-video"></i>
+          <span>15 aulas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-clock"></i>
+          <span>10 horas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-star"></i>
+          <span>4.6 (132)</span>
+        </div>
+      </div>
+      
+      <div class="curso-price">
+        <span class="original-price">R$ 197,00</span>
+        <span class="current-price">R$ 127,00</span>
+        <span class="discount-badge">36% OFF</span>
+      </div>
+      
+      <div class="curso-cta">
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        <a href="#" class="btn-comprar">Comprar Agora</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Curso 5 - Resolução de Questões -->
+  <div class="curso-card">
+    <div class="curso-badge">PRÁTICO</div>
+    <div class="curso-imagem">
+      <img src="/sitecursonovo-main/img/resolucao-questoes.png" alt="Resolução de Questões Comentadas">
+      <div class="curso-overlay">
+        <a href="#" class="btn-preview">Ver Prévia</a>
+      </div>
+    </div>
+    <div class="curso-content">
+      <div class="curso-category">Prática</div>
+      <h3>Resolução de Questões Comentadas</h3>
+      <p class="curso-description">Mais de 200 questões de concursos recentes resolvidas passo a passo.</p>
+      
+      <div class="curso-meta">
+        <div class="meta-item">
+          <i class="fas fa-video"></i>
+          <span>40 aulas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-clock"></i>
+          <span>25 horas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-star"></i>
+          <span>5.0 (287)</span>
+        </div>
+      </div>
+      
+      <div class="curso-price">
+        <span class="original-price">R$ 347,00</span>
+        <span class="current-price">R$ 247,00</span>
+        <span class="discount-badge">29% OFF</span>
+      </div>
+      
+      <div class="curso-cta">
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        <a href="#" class="btn-comprar">Comprar Agora</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Curso 6 - Matemática para ENEM -->
+  <div class="curso-card">
+    <div class="curso-badge">NOVO</div>
+    <div class="curso-imagem">
+      <img src="/sitecursonovo-main/img/matematica-enem.png" alt="Matemática para ENEM">
+      <div class="curso-overlay">
+        <a href="#" class="btn-preview">Ver Prévia</a>
+      </div>
+    </div>
+    <div class="curso-content">
+      <div class="curso-category">Preparatório ENEM</div>
+      <h3>Matemática para ENEM</h3>
+      <p class="curso-description">Tudo o que você precisa saber para mandar bem na prova de Matemática do ENEM.</p>
+      
+      <div class="curso-meta">
+        <div class="meta-item">
+          <i class="fas fa-video"></i>
+          <span>35 aulas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-clock"></i>
+          <span>22 horas</span>
+        </div>
+        <div class="meta-item">
+          <i class="fas fa-star"></i>
+          <span>4.9 (198)</span>
+        </div>
+      </div>
+      
+      <div class="curso-price">
+        <span class="original-price">R$ 277,00</span>
+        <span class="current-price">R$ 187,00</span>
+        <span class="discount-badge">32% OFF</span>
+      </div>
+      
+      <div class="curso-cta">
+        <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+        <a href="#" class="btn-comprar">Comprar Agora</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Seção Benefícios -->
+<section class="benefits">
+    <div class="section-container">
+        <h2>Por que estudar com a gente?</h2>
+        <p class="section-subtitle">Tudo o que você precisa para dominar a matemática de concursos</p>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">✓</div>
+                <h3>Conteúdo focado nos principais concursos</h3>
+                <p>Material direcionado para os editais mais recentes das bancas organizadoras</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">✓</div>
+                <h3>Resolução de questões comentadas</h3>
+                <p>Mais de 200 questões resolvidas passo a passo das últimas provas</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">✓</div>
+                <h3>Aulas objetivas e didáticas</h3>
+                <p>Explicações claras com exemplos práticos do professor Eduardo Tavares</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">✓</div>
+                <h3>Simulados e material de apoio</h3>
+                <p>10 simulados completos + resumos em PDF para revisão</p>
             </div>
         </div>
     </div>
 </section>
 
-  <section class="benefits">
-    <h2>Por que estudar com a gente?</h2>
-    <div class="grid">
-      <div class="card">✔️ Conteúdo focado nos principais concursos</div>
-      <div class="card">✔️ Resolução de questões comentadas</div>
-      <div class="card">✔️ Aulas objetivas e didáticas</div>
-      <div class="card">✔️ Simulados e material de apoio</div>
+<!-- Seção Conteúdo -->
+<section class="content">
+    <div class="section-container">
+        <h2>O que você vai aprender</h2>
+        <p class="section-subtitle">Domine os tópicos mais cobrados em provas de concursos</p>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">📌</div>
+                <h3>Operações fundamentais e frações</h3>
+                <p>Base sólida para todos os outros tópicos matemáticos</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">📌</div>
+                <h3>Porcentagem, razão e proporção</h3>
+                <p>Essenciais para interpretação de dados e problemas</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">📌</div>
+                <h3>Regra de três, juros e equações</h3>
+                <p>Resolução de problemas do cotidiano e financeiros</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">📌</div>
+                <h3>Probabilidade e análise combinatória</h3>
+                <p>Frequentes em provas e com abordagem prática</p>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section class="content">
-    <h2>O que você vai aprender</h2>
-    <div class="grid">
-      <div class="card">📌 Operações fundamentais e frações</div>
-      <div class="card">📌 Porcentagem, razão e proporção</div>
-      <div class="card">📌 Regra de três, juros e equações</div>
-      <div class="card">📌 Probabilidade e análise combinatória</div>
+<!-- Seção Público -->
+<section class="audience">
+    <div class="section-container">
+        <h2>Esse curso é para você que...</h2>
+        <p class="section-subtitle">Identifique-se com pelo menos uma dessas situações</p>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">👨‍🎓</div>
+                <h3>Está começando a estudar para concursos</h3>
+                <p>Comece do zero com a base certa para sua preparação</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🤔</div>
+                <h3>Tem dificuldade em matemática básica</h3>
+                <p>Supere seus bloqueios com método comprovado</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🎯</div>
+                <h3>Busca uma preparação prática e eficiente</h3>
+                <p>Foco no que realmente cai na prova, sem enrolação</p>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section class="audience">
-    <h2>Esse curso é para você que...</h2>
-    <div class="grid">
-      <div class="card">✅ Está começando a estudar para concursos</div>
-      <div class="card">✅ Tem dificuldade em matemática básica</div>
-      <div class="card">✅ Busca uma preparação prática e eficiente</div>
+<section class="feedback-section">
+    <div class="section-container">
+        <h2>Depoimentos de Alunos</h2>
+        <p class="section-subtitle">Veja o que dizem quem já estudou com nosso método</p>
+        
+        <div class="feedback-carousel">
+            <div class="feedback-track">
+                <!-- Depoimento 1 -->
+                <div class="cartao feedback-slide active">
+                    <div class="feedback-quote">"</div>
+                    <p class="feedback-text">O Eduardo explica de forma simples e direta. A matemática deixou de ser um bicho-papão para mim! As aulas são tão claras que até quem tem dificuldade consegue acompanhar.</p>
+                    <div class="feedback-author">
+                        <div class="feedback-photo" style="background-color: #3498db;">CF</div>
+                        <div class="feedback-info">
+                            <strong>Carla F.</strong>
+                            <span>Aprovada no TRT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="cartao feedback-slide">
+                    <div class="feedback-quote">"</div>
+                    <p class="feedback-text">Passei no concurso da PM graças ao curso. As técnicas de resolução de questões foram decisivas! Recomendo para todos que querem aprovação.</p>
+                    <div class="feedback-author">
+                        <div class="feedback-photo" style="background-color: #e74c3c;">RS</div>
+                        <div class="feedback-info">
+                            <strong>Rafael S.</strong>
+                            <span>Aprovado na PM-SP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="cartao feedback-slide">
+                    <div class="feedback-quote">"</div>
+                    <p class="feedback-text">Depois de anos tentando, finalmente passei em um concurso! O material é excelente e o professor tem uma didática incrível. Valeu cada centavo investido.</p>
+                    <div class="feedback-author">
+                        <div class="feedback-photo" style="background-color: #2ecc71;">AM</div>
+                        <div class="feedback-info">
+                            <strong>Ana M.</strong>
+                            <span>Aprovada no INSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feedback-controls">
+                <button class="feedback-prev" aria-label="Depoimento anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <div class="feedback-dots"></div>
+                <button class="feedback-next" aria-label="Próximo depoimento">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <section class="testimonials">
-    <h2>Depoimentos de Alunos</h2>
-    <div class="grid">
-      <div class="card">“O Eduardo explica de forma simples e direta. A matemática deixou de ser um bicho-papão!” – Carla F.</div>
-      <div class="card">“Passei no concurso da PM graças ao curso. Super recomendo!” – Rafael S.</div>
-    </div>
-  </section>
-
+</section>
   
-  
+ <section class="offer">
+    <div class="offer-container">
+        <div class="offer-badge">OFERTA POR TEMPO LIMITADO</div>
+        <h2>Oferta Exclusiva</h2>
+        
+        <div class="price-container">
+            <div class="price-box">
+                <p class="price-original">De R$ 497,00 por:</p>
+                <p class="price">R$ 197,00 <span class="price-small">à vista</span></p>
+                <p class="price-installments">ou 12x de R$ 19,90</p>
+                <div class="price-savings">Economize R$ 300,00</div>
+            </div>
+        </div>
+        
+        <ul class="offer-features">
+            <li><svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Acesso imediato a todas as aulas</li>
+            <li><svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 10 simulados completos</li>
+            <li><svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Grupo exclusivo de dúvidas</li>
+            <li><svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Certificado digital</li>
+            <li><svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Garantia de 7 dias</li>
+        </ul>
+        
+        <button class="offer-button">
+            Quero aproveitar esta oferta
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+            </svg>
+        </button>
+        
+   
+</section>
 
-  <section class="offer">
-    <h2>Oferta Exclusiva</h2>
-    <p class="price">R$ 197,00 à vista ou 12x de R$ 19,90</p>
-    <p style="text-align: center;">Inclui simulados + grupo de dúvidas + garantia de 7 dias</p>
-  </section>
 
-  <section class="newsletter">
-    <h2>Receba conteúdos exclusivos e avisos de novas turmas</h2>
-    <form action="https://SEU_USUARIO.mailchimp.com/subscribe/post?u=SEU_U_ID&amp;id=SEU_ID" method="post" target="_blank">
-      <input type="text" name="FNAME" placeholder="Seu nome" required />
-      <input type="email" name="EMAIL" placeholder="Seu e-mail" required />
-      <button type="submit">Quero receber!</button>
-    </form>
-  </section>
-
-  <section class="cta" style="text-align: center;">
-    <h2>Garanta sua Vaga Agora</h2>
-    <button>Quero me inscrever</button>
-  </section>
-
-  <section class="faq">
-    <h2>Perguntas Frequentes</h2>
-    <div class="faq-item">
-      <h4 onclick="toggleFaq(this)">✔️ O curso tem certificado?</h4>
-      <p>Sim! Ao concluir, você recebe um certificado digital.</p>
+<section class="newsletter">
+    <div class="newsletter-container">
+        <h2>Receba conteúdos exclusivos e avisos de novas turmas</h2>
+        <p class="newsletter-subtitle">Cadastre-se para receber materiais gratuitos e atualizações diretamente no seu e-mail</p>
+        
+        <form class="newsletter-form" action="https://SEU_USUARIO.mailchimp.com/subscribe/post?u=SEU_U_ID&amp;id=SEU_ID" method="post" target="_blank">
+            <div class="form-group">
+                <input type="text" name="FNAME" placeholder="Seu nome" required />
+                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <div class="form-group">
+                <input type="email" name="EMAIL" placeholder="Seu e-mail" required />
+                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </div>
+            <button type="submit" class="newsletter-button">
+                <span>Quero receber!</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </form>
     </div>
-    <div class="faq-item">
-      <h4 onclick="toggleFaq(this)">✔️ Por quanto tempo tenho acesso ao curso?</h4>
-      <p>O acesso é vitalício, incluindo atualizações futuras.</p>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="cta-container">
+        <h2>Garanta sua Vaga Agora</h2>
+        <p class="cta-subtitle">Comece hoje mesmo sua preparação para os principais concursos públicos</p>
+        <button class="cta-button">
+            Quero me inscrever
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+        </button>
     </div>
-    <div class="faq-item">
-      <h4 onclick="toggleFaq(this)">✔️ O curso é indicado para iniciantes?</h4>
-      <p>Sim! O curso começa do básico e avança gradualmente.</p>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+    <div class="faq-container">
+        <h2>Perguntas Frequentes</h2>
+        <p class="faq-subtitle">Tire suas dúvidas sobre o curso</p>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span class="faq-icon">✓</span>
+                <h4>O curso tem certificado?</h4>
+                <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                <p>Sim! Ao concluir, você recebe um certificado digital reconhecido, válido para horas complementares e comprovação de qualificação.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span class="faq-icon">✓</span>
+                <h4>Por quanto tempo tenho acesso ao curso?</h4>
+                <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                <p>O acesso é vitalício, incluindo todas as atualizações futuras do conteúdo sem custo adicional.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span class="faq-icon">✓</span>
+                <h4>O curso é indicado para iniciantes?</h4>
+                <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <div class="faq-answer">
+                <p>Sim! O curso começa dos conceitos mais básicos e avança gradualmente, sendo perfeito tanto para quem está começando quanto para quem precisa revisar conteúdos.</p>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
   <script>
     function toggleFaq(el) {
@@ -156,6 +636,196 @@
     setInterval(() => {
       ctaButton.classList.toggle("highlight");
     }, 1500);
+
+
+  
+ // Script avançado para o carrossel de banners
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.querySelector('.banner-track');
+      const slides = document.querySelectorAll('.banner-slide');
+      const prevBtn = document.querySelector('.banner-btn.prev');
+      const nextBtn = document.querySelector('.banner-btn.next');
+      const dots = document.querySelectorAll('.banner-dot');
+      
+      let currentIndex = 0;
+      const slideWidth = slides[0].offsetWidth;
+      const totalSlides = slides.length;
+      
+      // Inicializa o carrossel
+      function initCarousel() {
+        updateCarousel();
+        startAutoPlay();
+      }
+      
+      // Atualiza a posição do carrossel
+      function updateCarousel() {
+        // Remove a classe 'active' de todos os slides
+        slides.forEach(slide => slide.classList.remove('active'));
+        
+        // Adiciona a classe 'active' ao slide atual
+        slides[currentIndex].classList.add('active');
+        
+        // Move o track para a posição correta
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        
+        // Atualiza os dots
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+        
+        // Desabilita botões quando necessário
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === totalSlides - 1;
+      }
+      
+      // Vai para o slide anterior
+      function prevSlide() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+        resetAutoPlay();
+      }
+      
+      // Vai para o próximo slide
+      function nextSlide() {
+        if (currentIndex < totalSlides - 1) {
+          currentIndex++;
+        } else {
+          currentIndex = 0; // Volta para o primeiro slide
+        }
+        updateCarousel();
+        resetAutoPlay();
+      }
+      
+      // Vai para um slide específico
+      function goToSlide(index) {
+        currentIndex = index;
+        updateCarousel();
+        resetAutoPlay();
+      }
+      
+      // Autoplay
+      let autoplayInterval;
+      
+      function startAutoPlay() {
+        autoplayInterval = setInterval(nextSlide, 5000);
+      }
+      
+      function resetAutoPlay() {
+        clearInterval(autoplayInterval);
+        startAutoPlay();
+      }
+      
+
+      // Event listeners
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+      
+      // Navegação pelos dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => goToSlide(index));
+      });
+      
+      // Pausa o autoplay quando o mouse está sobre o carrossel
+      const carousel = document.querySelector('.banner-carousel');
+      carousel.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+      carousel.addEventListener('mouseleave', startAutoPlay);
+      
+      // Redimensionamento da tela
+      window.addEventListener('resize', function() {
+        slideWidth = slides[0].offsetWidth;
+        updateCarousel();
+      });
+      
+      // Inicializa o carrossel
+      initCarousel();
+    });
+
+     function toggleFaq(element) {
+        const faqItem = element.closest('.faq-item');
+        faqItem.classList.toggle('active');
+    }
+
+     document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.feedback-track');
+        const slides = Array.from(document.querySelectorAll('.feedback-slide'));
+        const dotsContainer = document.querySelector('.feedback-dots');
+        const prevBtn = document.querySelector('.feedback-prev');
+        const nextBtn = document.querySelector('.feedback-next');
+        
+        let currentIndex = 0;
+        let autoPlayInterval;
+        
+        // Criar dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('feedback-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+        
+        const dots = Array.from(document.querySelectorAll('.feedback-dot'));
+        
+        // Atualizar carrossel
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            // Atualizar dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+        
+        // Navegação
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+            resetAutoPlay();
+        }
+        
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel();
+        }
+        
+        // Autoplay
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(nextSlide, 5000);
+        }
+        
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+        
+        // Event listeners
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoPlay();
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoPlay();
+        });
+        
+        // Iniciar
+        updateCarousel();
+        startAutoPlay();
+        
+        // Pausar autoplay quando o mouse estiver sobre o carrossel
+        const carousel = document.querySelector('.feedback-carousel');
+        carousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+        carousel.addEventListener('mouseleave', startAutoPlay);
+    });
+
   </script>
 </body>
 </html>
